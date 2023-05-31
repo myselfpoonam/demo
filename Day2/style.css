@@ -1,0 +1,74 @@
+* {
+    background-color: rgb(232, 186, 100);
+}
+
+body {}
+
+.container {}
+
+.container1 {
+    width: 100%;
+}
+
+.container1a {
+    width: 50%;
+}
+
+.box1 {
+    background-color: rgb(63, 219, 63);
+    height: 100px;
+}
+
+.container1b {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.box2 {
+    background-color: plum;
+    height: 70px;
+    flex: 1;
+}
+
+.box3 {
+    background-color: yellow;
+    height: 70px;
+    flex: 1;
+}
+
+.container1d {
+    width: 25%;
+}
+
+.container1c {}
+
+.box4 {
+    background-color: red;
+    height: 110px;
+    margin-top: 15px;
+}
+
+.box5 {
+    background-color: blueviolet;
+    height: 70px;
+    margin-top: 15px;
+}
+
+.container1e {
+    width: 25%;
+}
+
+.box6 {
+    background-color: grey;
+    height: 70px;
+    margin-top: 15px;
+}
+
+.box7 {
+    background-color: black;
+    height: 110px;
+    margin-top: 15px;
+}
