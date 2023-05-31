@@ -15,13 +15,15 @@ body {
 
 .container {
     background-color: rbg(128, 137, 231);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
 }
 
 .container .aside {
     background-color: rgb(117, 211, 117);
-    width: 95%;
+    width: 30%;
     height: 500px;
     display: flex;
     align-items: center;
@@ -33,26 +35,25 @@ body {
 
 .article {
     background-color: orange;
-    width: 100%;
+    flex: 1;
     height: 500px;
     display: flex;
-    align-items: center;
-    margin-top: 50%;
     justify-content: center;
+    align-items: center;
     margin-top: 15px;
-    position: relative;
     color: antiquewhite;
     flex-direction: column;
 }
 
 .image {
     background-color: rgb(218, 218, 10);
+    width: 30%;
     display: flex;
-    width: 25%;
     align-items: center;
-    height: 25%;
+    height: 230%;
     margin-top: 10px;
     justify-content: center;
+    margin-left: 100px;
 }
 
 .footer {
@@ -63,4 +64,10 @@ body {
     margin-top: 15px;
     justify-content: center;
     color: antiquewhite;
+}
+
+.innerContainer {
+    display: flex;
+    width: 95%;
+    padding-right: 80px;
 }
