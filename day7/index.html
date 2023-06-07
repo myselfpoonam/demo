@@ -15,28 +15,46 @@
         <div class="container">
 
             <div class="title">
-                <h1> Register<br></h1>
+
+                <h1> Register</h1>
+
+            </div>
+            <div class="text1">
                 <h4>Create your account. Its free and only takes a minutes</h4>
             </div>
+            <div class="content">
+                <div class="text">
+                    <br>
+                    <input type="name" placeholder="Firstname" id="firstname" required>
+                    <input type="name" placeholder="Lastname" id="lastname" required>
+                </div><br>
+                <div class="text2">
+                    <input type="email" placeholder=" Email" id="email" required><br><br>
+                    <input type="password" placeholder="Password" id="password" required><br><br>
+                    <input type="password" placeholder="Confirm password" id="confirmpassword" required><br>
+                </div><br>
+                <div class="checkbtn">
+                    <input type="checkbox" class="box">
+                    <label>I accept the <span style="color:green">Term of Use and Privacy Policy.</span> </label><br>
+                </div>
+            </div>
             <br>
-            <input type="name" placeholder="Firstname" id="firstname">
-            <input type="name" placeholder="Lastname" id="lastname">
-            <br>
-            <br>
+            <div class="subbtn">
+                <button type="submit" class="check" style="background-color: rgb(67, 193, 67); font-size: 20px; border-radius: 5px;">Register Now</button>
+            </div>
 
-            <input type="email" placeholder="Enter email" id="email"><br><br>
-            <input type="password" placeholder="Enter password" id="password"><br><br>
-            <input type="password" placeholder="Enter Confirmpassword" id="confirmpassword"><br><br>
-            <input type="checkbox">I accept the Term of Policy and Privacy Policy<br>
-            <br>
-            <button type="submit" class="check" style="background-color: green; font-size: 20px; border-radius: 5px;">Register Now</button>
+
 
 
         </div>
 
-
+        <div class="sign">
+            Already have an acount? <br> <a href="#"><span> Sign in</span></a>
+        </div>
     </form>
-    <p id="message"></p>
+
+
+
     <script src="script.js"></script>
 
 </body>

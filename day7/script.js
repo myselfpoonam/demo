@@ -8,7 +8,11 @@ form1.addEventListener('submit', event => {
     const password1 = document.getElementById('password').value
     const confpassword = document.getElementById('confirmpassword').value
         //console.log(fname)
+    if (password1 !== confpassword) {
+        alert("Password and Confirm Password do not match")
 
+        return;
+    }
     const registerdata = {
         firstName: fname,
         lastName: lname,
@@ -28,10 +32,11 @@ form1.addEventListener('submit', event => {
         .then(data => {
             console.log(data)
             if (data.success) {
-                document.getElementById("message").innerHTML = "Register Successful!!!"
+                alert("Register Successfu!!!")
+
 
             } else {
-                document.getElementById("message").innerHTML = "Failed Register"
+                alert("Failed Register!!!!")
             }
         })
         .catch(error => {
