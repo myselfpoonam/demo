@@ -1,0 +1,154 @@
+body {
+    background-color: rgb(31, 134, 175);
+    display: flex;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: gray;
+}
+
+.container {
+    background-color: white;
+    height: 570px;
+    width: 500px;
+    margin-top: 40px;
+    box-shadow: 5px 5px 5px rgb(1, 6, 8);
+}
+
+.content {
+    padding-left: 60px;
+    padding-right: 50px;
+}
+
+.title {
+    width: 500px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1:before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: gray;
+    top: 90px;
+    left: 520px;
+    position: absolute;
+}
+
+h1:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: gray;
+    top: 90px;
+    right: 520px;
+    position: absolute;
+}
+
+.title h1 {
+    font-size: 50px;
+    margin-top: 70px;
+}
+
+.text {
+    display: flex;
+    margin-right: 20px;
+    gap: 3px;
+    margin-top: 30px;
+}
+
+.text input {
+    flex: 1;
+}
+
+.text1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input {
+    border-radius: 5px;
+    height: 40px;
+    box-shadow: 1px solid black;
+}
+
+.text2 {
+    width: 550px;
+}
+
+.text2 input {
+    border-radius: 5px;
+    padding-left: 5px;
+    height: 40px;
+    width: 363px;
+    box-shadow: 1px solid black;
+}
+
+.checkbtn {
+    display: flex;
+    margin-left: 0px;
+}
+
+label {
+    margin-top: 13px;
+}
+
+.subbtn {
+    padding-left: 65px;
+    padding-right: 50px;
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 14px;
+    color: white;
+    font-weight: bold;
+    box-shadow: none;
+    width: 180px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgb(1, 6, 8);
+}
+
+.details {
+    padding: 14px;
+    color: white;
+    font-weight: bold;
+    box-shadow: none;
+    width: 180px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 1px 1px 5px rgb(0, 15, 21);
+}
+
+.sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.userlist {
+    color: antiquewhite;
+}
+
+.list {
+    color: black;
+    padding-left: 180px;
+}
+
+#name {
+    color: white;
+}
+
+.listname {
+    color: rgb(235, 216, 216);
+}
