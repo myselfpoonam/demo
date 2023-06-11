@@ -1,149 +1,315 @@
-body {
-    background-color: rgb(1, 1, 63);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.title {
-    color: wheat;
-    cursor: pointer;
-}
-
-.menu {
-    display: flex;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-.menu ul {
-    display: flex;
-    font-style: initial;
-    gap: 50px;
-    list-style: none;
-    color: wheat;
-}
-
-.button {
-    display: flex;
-    gap: 30px;
-}
-
-.login {
-    color: wheat;
-    margin-top: 25px;
-    cursor: pointer;
-}
-
-.join {
-    display: flex;
-    background-color: rgb(73, 179, 221);
-    align-items: center;
-    justify-content: center;
-    width: 120px;
-    height: 50px;
-    margin-top: 15px;
-    color: wheat;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 100px;
-}
-
-.cont1 {
-    color: blue;
-}
-
-.cont2 {
-    color: wheat;
-    margin-top: 20px;
-    font-weight: bold;
-    font-size: 50px;
-    text-align: center;
-}
-
-.cont3 {
-    color: wheat;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.cont4 {
-    display: flex;
-    gap: 10px
-}
-
-.join1 {
-    display: flex;
-    background-color: rgb(73, 179, 221);
-    align-items: center;
-    justify-content: center;
-    width: 120px;
-    height: 50px;
-    margin-top: 18px;
-    color: wheat;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.learn {
-    display: flex;
-    border: 2px solid rgb(73, 179, 221);
-    align-items: center;
-    justify-content: center;
-    width: 150px;
-    height: 48px;
-    color: rgb(73, 179, 221);
-    border-radius: 5px;
-    margin-top: 18px;
-    cursor: pointer;
-}
-
-.base1 {
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.base {
-    display: flex;
-    width: 100%;
-    margin-top: 80px;
-    gap: 16px;
-    justify-content: center;
-}
-
-.box1 {
-    display: flex;
-    background-color: wheat;
-    height: 300px;
-    flex: 1;
-}
-
-.box2 {
-    background-color: wheat;
-    height: 300px;
-    display: flex;
-    flex: 1;
-}
-
-.box3 {
-    background-color: wheat;
-    height: 300px;
-    display: flex;
-    flex: 1;
-}
-
-.img {
-    margin-top: 30px;
-    margin-left: 50px;
-}
+    body {
+        background-color: rgb(1, 1, 63);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .title {
+        color: wheat;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    .title a {
+        text-decoration: none;
+        color: wheat;
+    }
+    
+    .menu {
+        display: flex;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    
+    .menu ul {
+        display: flex;
+        font-style: initial;
+        gap: 50px;
+        list-style: none;
+        color: wheat;
+        text-decoration: none;
+    }
+    
+    .menu a {
+        text-decoration: none;
+        color: wheat;
+    }
+    
+    .menu ul a:hover {
+        text-decoration: underline;
+        color: rgb(73, 179, 221);
+    }
+    
+    .button {
+        display: flex;
+        gap: 30px;
+    }
+    
+    .login {
+        color: wheat;
+        margin-top: 25px;
+        cursor: pointer;
+    }
+    
+    .join {
+        display: flex;
+        background-color: rgb(73, 179, 221);
+        align-items: center;
+        justify-content: center;
+        width: 120px;
+        height: 50px;
+        margin-top: 15px;
+        color: wheat;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .login-form-container {
+        position: absolute;
+        top: 20%;
+        left: 35%;
+        width: 500px;
+        height: 550px;
+        background-color: transparent;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 25px;
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 30px rgba(215, 204, 204, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0);
+    }
+    
+    .login-form-container.active {
+        transform: scale(1);
+    }
+    
+    .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        background-color: rgb(23, 47, 142);
+        font-size: 2rem;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+        cursor: pointer;
+    }
+    
+    .form-box {
+        width: 100%;
+        padding: 40px;
+    }
+    
+    .form-box h3 {
+        font-size: 2em;
+        color: white;
+        text-align: center;
+    }
+    
+    .input-box {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        border-bottom: 2px solid white;
+        margin: 35px 0;
+    }
+    
+    .input-box label {
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        font-size: 1em;
+        color: wheat;
+        font-weight: 500;
+        pointer-events: none;
+    }
+    
+    .input-box input:focus~label,
+    .input-box input:valid~label {
+        top: -5px;
+    }
+    
+    .input-box input {
+        top: 50%;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 0 6px 0 5px;
+    }
+    
+    .input-box .icon {
+        position: absolute;
+        right: 8px;
+        font-size: 1.2rem;
+        color: white;
+        line-height: 57px;
+    }
+    
+    .remember {
+        font-size: .9rem;
+        color: white;
+        font-weight: 500;
+        margin: -15px 0 15px;
+    }
+    
+    .forget {
+        padding-left: 180px;
+    }
+    
+    .remember label input {
+        accent-color: white;
+        margin-right: 3px;
+    }
+    
+    .remember a {
+        color: wheat;
+        text-decoration: none;
+    }
+    
+    .remember a:hover {
+        text-decoration: underline;
+    }
+    
+    .btn {
+        width: 100%;
+        height: 45px;
+        background-color: rgb(23, 47, 142);
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        color: wheat;
+        font-weight: 300;
+    }
+    
+    .register {
+        font-size: .9rem;
+        color: black;
+        text-align: center;
+        font-weight: 500;
+        margin: 25px 0 10px;
+    }
+    
+    .register p a {
+        color: black;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    
+    .register p a:hover {
+        text-decoration: underline;
+    }
+    
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    
+    .cont1 {
+        color: blue;
+    }
+    
+    .cont2 {
+        color: wheat;
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 50px;
+        text-align: center;
+    }
+    
+    .cont3 {
+        color: wheat;
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .cont4 {
+        display: flex;
+        gap: 10px
+    }
+    
+    .join1 {
+        display: flex;
+        background-color: rgb(73, 179, 221);
+        align-items: center;
+        justify-content: center;
+        width: 120px;
+        height: 50px;
+        margin-top: 18px;
+        color: wheat;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .learn {
+        display: flex;
+        border: 2px solid rgb(73, 179, 221);
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 48px;
+        color: rgb(73, 179, 221);
+        border-radius: 5px;
+        margin-top: 18px;
+        cursor: pointer;
+    }
+    
+    .base1 {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    .base {
+        display: flex;
+        width: 100%;
+        margin-top: 80px;
+        gap: 16px;
+        justify-content: center;
+    }
+    
+    .box1 {
+        display: flex;
+        background-color: wheat;
+        height: 300px;
+        flex: 1;
+    }
+    
+    .box2 {
+        background-color: wheat;
+        height: 300px;
+        display: flex;
+        flex: 1;
+    }
+    
+    .box3 {
+        background-color: wheat;
+        height: 300px;
+        display: flex;
+        flex: 1;
+    }
+    
+    .img {
+        margin-top: 30px;
+        margin-left: 50px;
+    }
