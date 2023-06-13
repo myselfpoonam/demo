@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(122, 191, 191);
+}
+
+.todo-list {
+    background-color: rgb(15, 42, 91);
+    height: 250px;
+    margin-left: 400px;
+    margin-top: 150px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.todo-list h2 {
+    color: rgb(0, 130, 181);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+}
+
+.search-place {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #555;
+    border-radius: 15px;
+    border-bottom: 2px solid red;
+}
+
+.todo-btn {
+    padding: 10px 13px;
+    background-color: rgb(88, 136, 179);
+    border-radius: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.todo-btn:hover {
+    border-radius: 20px;
+}
+
+.list-style li {
+    color: black;
+    background-color: white;
+    height: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+    margin-top: 10px;
+    border-radius: 5px;
+    list-style: circle;
+    width: 150px;
+    cursor: pointer;
+}
+
+.list-style li:hover {
+    text-transform: uppercase;
+    color: #555;
+}
