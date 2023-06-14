@@ -5,7 +5,9 @@ import Todo from "./Todo";
 const Search = () => {
     const[input,setInput]=useState('');
     const [items,setItems]=useState([]);
-
+// useEffect(()=>{
+//   alert('TODO LIST APP');
+// },[items])
     const itemChange = e =>{
         setInput(e.target.value);
   
@@ -20,8 +22,10 @@ const Search = () => {
     }
     const listItems = ()=>{
      setItems((oldItems)=> {
-    return [...oldItems,input ];
-  })
+    return[...oldItems,input ];
+    
+    
+  });
   setInput('');
     
 
@@ -41,9 +45,9 @@ const Search = () => {
       <button className="todo-btn" onClick={listItems}>Submit</button>
       <ol>
        
-        {items.map((itemval) => {
-         return<Todo text={itemval}/>
-        })}
+        {items.map((itemvalue) => {
+         return<Todo text={itemvalue}/>
+        })} 
       </ol>
     </form>
   )

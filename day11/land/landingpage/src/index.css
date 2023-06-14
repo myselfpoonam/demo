@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(212, 240, 240);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.maincontainer {
+    padding: 30px 350px 10px;
+}
+
+.main {
+    border: 0.1rem solid wheat;
+    background-color: white;
+    box-shadow: 8px 8px 4px skyblue;
+    margin-top: 10px;
+    height: 180px;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+img {
+    width: 70px;
+    height: 70px;
+    border-radius: 30%;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.title {
+    margin-top: 40px;
+}
+
+p {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: silver;
+}
+
+.color {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.content {
+    width: 180px;
+}
+
+
+/* .increment {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(189, 211, 204);
+    border-radius: 5px;
+    margin-top: 80px;
+} */
+
+.btn {
+    display: flex;
+    margin-top: 130px;
+    margin-left: 150px;
+    gap: 10px
+}
+
+button {
+    height: 30px;
+    width: 30px;
+    background-color: azure;
+    border: 0.1rem solid wheat;
+    border-radius: 6px;
+}
+
+.close {
+    position: absolute;
+    height: 40px;
+    width: 50px;
+    background-color: rgb(244, 244, 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    margin-left: 550px;
+    margin-top: 40px;
+    border-radius: 9px 9px 2px white;
+}
