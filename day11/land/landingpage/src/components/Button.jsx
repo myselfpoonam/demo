@@ -7,7 +7,11 @@ const handleClick = ()=>{
     setCount(count+1)
 }
 const handleClicks = ()=>{
+  if(count <= 0){
+    return
+  }else {
     setCount(count-1)
+  }
 }
   return (
     <div className='btn'>

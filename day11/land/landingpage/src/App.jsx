@@ -27,6 +27,7 @@ function App() {
      
     <Cards image={Image2} title="Backpack" color='Yellow' price="$250"  close="X"/>
     <Cards image={Image3}title="Silver Ring Set" color='Silver' price="$250"  close="X"/>
+    <Cards image={Image3}title="Silver Ring Set" color='Silver' price="$250"  close="X"/>
     
   </div>
 
