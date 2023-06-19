@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+//  import img from './assets/images/img.jpg'
 
 const Login = (props) => {
  
@@ -13,6 +14,8 @@ const Login = (props) => {
       e.preventDefault();
       setFormError(validate(formValues));
       setSubmit(true)
+
+     
     
   }
 
@@ -48,14 +51,15 @@ const Login = (props) => {
     if(Object.keys(formError).length === 0 && submit ){ 
     alert("Login from successfully!!!!!")
     }
-   })}
+   },[formError])}
     <div className='main'>
-      
-      <form onSubmit={handleSubmit}>
+      <div className='img'>
+         {/* <img src={img} alt='mnj'/>  */}
+      </div>
+      <form onSubmit={handleSubmit} > 
       <div className='content'>
       <div className='title'>
-       <h1>Chat<span>app</span></h1>
-         <p>Login to your account</p>
+       <h1>Chat<span>app</span></h1><p>Login to your account</p>
       </div>
      <div className='input'>
        <input type='email' name="email" className='email' placeholder='Email'onChange={handleChange} values={formValues.email} /><br/><span>{formError.email}</span><br/>
@@ -63,7 +67,7 @@ const Login = (props) => {
 
       </div>
       <div className='remember'>
-         <input type='checkbox' className='check'></input> Remember me
+         <input type='checkbox' className='check'/><span>Remember me</span>
          <p><a href='#'></a>Forget password?</p>
       </div>
       <div className='btn'>

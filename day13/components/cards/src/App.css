@@ -1,0 +1,94 @@
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    width: 100%;
+}
+
+#root {
+    border-radius: 50px;
+    border: 0.1rem solid ghostwhite;
+}
+
+.main {
+    display: flex;
+    height: 300px;
+    background-color: white;
+    color: black;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-bottom-color: rgb(238, 238, 255);
+    box-shadow: 8px 10px 10px gainsboro;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 250px;
+    width: 300px;
+    border-radius: 30px;
+}
+
+.title {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    width: 500px;
+}
+
+.title h2 {
+    font-size: xx-large;
+    font-weight: bolder;
+    font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.title p {
+    background-color: ghostwhite;
+    height: 80px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    border-radius: 10px;
+    color: rgb(196, 194, 194);
+}
+
+hr {
+    width: 1000px;
+    color: ghostwhite;
+}
+
+.price {
+    padding-left: 100px;
+}
+
+.price p {
+    background-color: rgb(165, 238, 236);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    color: rgb(74, 181, 115);
+    font-size: 50px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.price h5 {
+    font-size: 30px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    /* font-weight: bold; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
