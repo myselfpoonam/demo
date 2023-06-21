@@ -1,13 +1,19 @@
 import React, { useEffect, useState } from "react";
 //  import img from './assets/images/img.jpg'
+import useCurrentUser from "./useCurrentUser";
+import { Navigate } from "react-router-dom";
 
 import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
 
 const Login = (props) => {
   const initalValues = { email: "", password: "" };
   const [formValues, setFormValues] = useState(initalValues);
   const [formError, setFormError] = useState({});
   const [submit, setSubmit] = useState(false);
+  const { getId } = useCurrentUser;
+
+  console.log(getId);
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -29,7 +35,8 @@ const Login = (props) => {
         alert(data.message);
       }
       console.log(data);
-      localStorage.setItem("message", data.message);
+
+      localStorage.setItem("id", data.data._id);
     } catch (error) {}
   }
 
@@ -58,31 +65,6 @@ const Login = (props) => {
   };
   return (
     <>
-      <div className="names">
-        <h1>LOGIN PAGE</h1>
-      </div>
-      <header>
-        <nav>
-          <ul>
-            <li style={{ color: "black" }}>
-              <Link to="/register" style={{ color: "white" }}>
-                Register
-              </Link>
-            </li>
-            <li style={{ color: "black" }}>
-              <Link to="/login" style={{ color: "white" }}>
-                {" "}
-                Login
-              </Link>
-            </li>
-            <li style={{ color: "black" }}>
-              <Link to="/users" style={{ color: "white" }}>
-                Users
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
       <div className="main">
         <div className="img">{/* <img src={img} alt='mnj'/>  */}</div>
         <form>

@@ -1,6 +1,8 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
+import useCurrentUser from "./useCurrentUser";
 
 function Users() {
   const [data, setData] = useState([]);
@@ -21,43 +23,23 @@ function Users() {
         // console.log(resp);
         setData(resp);
         setLoading(false);
-        const loadingTime = endTime - startTime;
-        console.log("Loading Time:", loadingTime);
+        // const loadingTime = endTime - startTime;
+        // console.log("Loading Time:", loadingTime);
       } catch (err) {
         console.log("Error", err);
-        setLoading(false);
+        // setLoading(false);
       }
     }
     getData();
   }, []);
+
+  const { isAuth, id } = useCurrentUser();
+  if (!isAuth) {
+    return <h1 style={{ color: "black" }}>Login First</h1>;
+  }
+
   return (
     <div className="list">
-      <div className="names1">
-        <h1>USER PAGE</h1>
-      </div>
-
-      <header className="header">
-        <nav>
-          <ul>
-            <li style={{ color: "black" }}>
-              <Link to="/register" style={{ color: "white" }}>
-                Register
-              </Link>
-            </li>
-            <li style={{ color: "black" }}>
-              <Link to="/login" style={{ color: "white" }}>
-                {" "}
-                Login
-              </Link>
-            </li>
-            <li style={{ color: "black" }}>
-              <Link to="/users" style={{ color: "white" }}>
-                Users
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
       <h2 style={{ color: "black" }}>List of all register users</h2>
       {loading ? (
         <h3 style={{ color: "black" }}>Loading......</h3>

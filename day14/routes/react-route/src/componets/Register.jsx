@@ -95,31 +95,6 @@ const Register = (props) => {
 
   return (
     <>
-      <div className="names">
-        <h2>REGISTER PAGE</h2>
-      </div>
-      <header>
-        <nav>
-          <ul>
-            <li style={{ color: "black" }}>
-              <Link to="/register" style={{ color: "white" }}>
-                Register
-              </Link>
-            </li>
-            <li style={{ color: "black" }}>
-              <Link to="/login" style={{ color: "white" }}>
-                {" "}
-                Login
-              </Link>
-            </li>
-            <li style={{ color: "black" }}>
-              <Link to="/users" style={{ color: "white" }}>
-                Users
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
       {useEffect(() => {
         if (Object.keys(formErrors).length === 0 && submit) {
           alert("Register from successfully!!!!!");
