@@ -101,7 +101,7 @@ console.log('Error',error)
     <>
    {useEffect(()=>{
     if(Object.keys(formErrors).length === 0 && submit ){ 
-    alert("Login from successfully!!!!!")
+    alert("Register from successfully!!!!!")
     }
    },[formErrors])}
     
@@ -130,7 +130,7 @@ console.log('Error',error)
         <button  onClick={()=> props.onFormSwitch('login')}>Log In </button>
        
       </div>
-    </div>
+    </div>  
    </form>
   
   </div>
