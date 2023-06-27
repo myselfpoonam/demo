@@ -1,5 +1,8 @@
 import React from "react";
 // import { image } from "../assets/images/img3.png";
+import image from "../assets/images/img4.png";
+import image1 from "../assets/images/img5.png";
+import image2 from "../assets/images/img6.png";
 
 const About = () => {
   return (
@@ -18,26 +21,28 @@ const About = () => {
             through comprehensive driver's license evaluations.
           </p>
         </div>
-        <div className=" bg-red-500">
-          {/* <img src={image} alt="image" /> */}
+        <div className="pl-56">
+          <img src={image} alt="image" />
         </div>
       </div>
-      <div className="flex pt-20 pl-40 gap-40 pr-20">
-        <div className="bg-red-100 w-[800px]">dfbh</div>
+      <div className="flex pt-8 pl-40 gap-40 pr-20">
+        <div className="">
+          <img src={image1} alt="" />
+        </div>
         <div className=" text-white">
           <h1 className="font-bold text-5xl">Our Purpose</h1>
           <p className="text-xl mt-8">
             At NDLE, we understand the importance of
             <br /> competent drivers on the road. Our purpose is to <br />
-            assess and evaluate individuals seeking a driver's <br />
-            license to ensure they possess the necessary k<br /> nowledge and
-            skills to drive safely. We aim <br />
-            to reduce accidents, improve traffic management,
-            <br /> and enhance overall road safety standards.
+            assess and evaluate individuals seeking a driver's license <br /> to
+            ensure they possess the necessary knowledge
+            <br /> and skills to drive safely. We aim to reduce accidents,
+            improve <br />
+            traffic management, and enhance overall road safety standards.
           </p>
         </div>
       </div>
-      <div className="flex pt-20 pl-40 pr-20">
+      <div className="flex pt-8 pl-40 pr-20">
         <div className=" text-white ">
           <h1 className="font-bold text-5xl">Join us Today</h1>
           <p className="text-xl mt-8">
@@ -49,8 +54,8 @@ const About = () => {
             preparation today.
           </p>
         </div>
-        <div className=" bg-red-500">
-          {/* <img src={image} alt="image" /> */}
+        <div className="pl-56">
+          <img src={image2} alt="image" />
         </div>
       </div>
     </div>

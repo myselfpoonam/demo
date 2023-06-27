@@ -10,22 +10,51 @@ const Navbar = () => {
         </NavLink>
         <div className="">
           <ul className="text-white text-xl flex gap-20">
-            <NavLink to="/landing">
+            <NavLink
+              to="/landing"
+              style={({ isActive, isPending }) => {
+                return {
+                  fontWeight: isActive ? "bold" : "",
+                  textDecoration: isActive ? "underline" : "",
+                  color: isPending ? "red" : "white",
+                };
+              }}
+            >
               <li>Home</li>
             </NavLink>
 
-            <NavLink to="/about">
-              <li>AboutUs</li>
+            <NavLink
+              to="/about"
+              style={({ isActive, isPending }) => {
+                return {
+                  fontWeight: isActive ? "bold" : "",
+                  textDecoration: isActive ? "underline" : "",
+                  color: isPending ? "red" : "white",
+                };
+              }}
+            >
+              <li>About Us</li>
             </NavLink>
 
-            <NavLink to="/contact">
+            <NavLink
+              to="/contact"
+              style={({ isActive, isPending }) => {
+                return {
+                  fontWeight: isActive ? "bold" : "",
+                  textDecoration: isActive ? "underline" : "",
+                  color: isPending ? "red" : "white",
+                };
+              }}
+            >
               <li>Contact Us</li>
             </NavLink>
 
             <div className="ml-72">
-              <button className="text-black w-32 h-12 rounded-3xl bg-white">
-                Sign up
-              </button>
+              <NavLink to="/signin">
+                <button className="text-black w-32 h-14 hover:bg-indigo-200 rounded-3xl bg-white">
+                  Sign in
+                </button>
+              </NavLink>
             </div>
           </ul>
         </div>
