@@ -1,12 +1,20 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import * as yup from "yup";
+import { yupResolver } from "@hookform/resolvers/yup";
 
+const schema = yup.object({
+  email: yup.string().required("Email is required"),
+  password: yup.string().required("Password is Required"),
+});
 const Signin = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm();
+  } = useForm({
+    resolver: yupResolver(schema),
+  });
 
   const onSubmit = (data) => {
     data.preventDefault;
@@ -32,22 +40,26 @@ const Signin = () => {
                 <input
                   type="email"
                   placeholder="Email"
+                  name="email"
                   className="w-[500px] p-2 pl-6 text-2xl rounded-xl text-black shadow-2xl"
                   {...register("email", { required: true })}
                 />
               </div>
               <div className="text-red-700 font-bold text-xm">
+                {/* {errors?.email.message} */}
                 {errors.email?.type === "required" && "Email is Required"}
               </div>
               <div className="flex justify-center">
                 <input
                   type="password"
                   placeholder="***************"
+                  name="password"
                   className="w-[500px] p-2 pl-6 text-2xl rounded-xl text-black"
                   {...register("password", { required: true })}
                 />
               </div>
               <div className="text-red-700 font-bold text-xm">
+                {/* {errors?.password.message} */}
                 {errors.password?.type === "required" && "Password is Required"}
               </div>
               <div className=" flex  text-xl gap-2">

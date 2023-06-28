@@ -13,6 +13,7 @@ import { AiOutlineEye } from "react-icons/ai";
 
 import { BsFillCarFrontFill } from "react-icons/bs";
 import { PiExamBold } from "react-icons/pi";
+import { Link } from "react-router-dom";
 
 const Landing = () => {
   return (
@@ -82,9 +83,15 @@ const Landing = () => {
       </div>
       <div className=" ml-40 mt-20 bg-gradient-to-t from-purple-400 to-purple-800 gap-20 rounded-3xl  w-[1500px] h-[450px] ">
         <div className="flex justify-between mr-20">
-          <Services title="Liscense Data" icon={<FiSearch />} />
-          <Services title="Licene status " icon={<LiaIdCardSolid />} />
-          <Services title="Online Exam" icon={<RiTodoLine />} />
+          <Link to="/data">
+            <Services title="Liscense Data" icon={<FiSearch />} />
+          </Link>
+          <Link to="/status">
+            <Services title="Licene status " icon={<LiaIdCardSolid />} />
+          </Link>
+          <Link to="/online">
+            <Services title="Online Exam" icon={<RiTodoLine />} />
+          </Link>
           <Services title="Color Vision" icon={<AiOutlineEye />} />
         </div>
         <div className="flex justify-center gap-20 ">
