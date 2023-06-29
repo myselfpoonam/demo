@@ -4,9 +4,9 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
-      <div className="pt-10  gap-80 flex pl-40">
+      <div className="pt-10 sm:gap-20 xl:gap-80 flex pl-40">
         <NavLink to="/">
-          <h2 className="text-white text-5xl font-bold">NDLE</h2>
+          <h2 className="text-white sm:text-xl xl:text-5xl font-bold">NDLE</h2>
         </NavLink>
         <div className="">
           <ul className="text-white text-xl flex gap-20">
