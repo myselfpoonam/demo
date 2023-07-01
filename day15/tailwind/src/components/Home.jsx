@@ -32,7 +32,9 @@ const Home = ({ addToCart }) => {
             {data.map((items) => (
               <div className="p-8 w-1/5 h-46 flex rounded-3xl flex-col shadow-2xl">
                 <Link to={`/description/${items.id}`}>
-                  <img src={items.image} className=" h-46 w-full" />
+                  <div className="h-46">
+                    <img src={items.image} className=" object-contain" />
+                  </div>
 
                   <div className="text-center h-20 mt-8 text-6xl font-bold">
                     {items.title}

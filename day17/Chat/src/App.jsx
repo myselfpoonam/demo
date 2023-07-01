@@ -35,8 +35,8 @@ function App() {
           <div className="text-5xl font-bold pb-4">Chats</div>
           <div className="bg-stone-200 rounded-2xl">
             <div className="bg-white rounded-2xl ">
-              <div className="flex gap-6 p-10">
-                <div className="border-2  border-black text-[40px] text-blue-500 border-dashed h-20 w-20 flex justify-center rounded-full ">
+              <div className="flex gap-4 p-6">
+                <div className="border-2   border-black text-[44px] text-blue-500 border-dashed h-20 w-20 flex justify-center items-center rounded-full ">
                   +
                 </div>
                 {Pictures.map((items) => (
